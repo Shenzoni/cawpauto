@@ -32,13 +32,10 @@ ln -sf /usr/bin/chromium
 STEP 5:
 ```
 which chromium
+chromium --version
 ```
 ``Output: /usr/bin/Chromium``
 
-STEP 6:
-```
-chromium --version
-```
 ``Output: 
 Chromium 14xxx``
 
