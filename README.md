@@ -7,3 +7,9 @@
 - Headless Chromium automation
 - Encrypted engine core
 - License-key based execution
+## Chromium Installation
+**A. In termux home :** ~ $
+> pkg update && pkg upgrade && pkg
+> install proot-distro -y
+> proot-distro install ubuntu
+> proot-distro login ubuntu
