@@ -1,13 +1,28 @@
+# Project Name
+
+Enterprise-grade WhatsApp Automation Framework.
+
+## Features
+- Multi-session support
+- Device link login
+- Headless Chromium automation
+- Encrypted engine core
+- License-key based execution
+
+## Architecture
+Public Wrapper + Encrypted Engine
+
+## Installation
+...
+
+## Usage
+...
+
+## Security Model
+- Encrypted core engine
+- Memory-only decryption
+- License-based access
+
 ## Legal
-This project is distributed under the AGPL-3.0 license.
-
-Using this software to automate WhatsApp may violate WhatsApp Terms of Service.
-You are solely responsible for how you use this project.
-
-# Autochat_Whataxx
-With this tool you can send messages between WhatsApp users for legal purposes (making WhatsApp accounts more active in chat).
-
-/*
-This software is licensed under AGPL-3.0.
-Commercial SaaS usage without releasing full source code is prohibited.
-*/
+- AGPL-3.0
+- Educational purposes only
