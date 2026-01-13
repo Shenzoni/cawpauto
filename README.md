@@ -13,6 +13,7 @@
 > install proot-distro -y
 > proot-distro install ubuntu
 > proot-distro login ubuntu
+
 **B. In ubuntu home :** root@localhost:~
 > apt update && apt upgrade -y
 > apt install -y curl wget gnupg ca-certificates software-properties-common
