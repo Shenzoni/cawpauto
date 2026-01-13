@@ -16,7 +16,7 @@ Go to last line and create new line then paste this:
 export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 export CHROME_PATH=/usr/bin/chromium
 ```
-![IMG](img/bash.img)
+![IMG](img/bash.jpg)
 ``CTRL+x ,Y ,ENTER`` to save the file
 
 Type in bash:
