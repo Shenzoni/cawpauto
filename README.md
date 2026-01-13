@@ -12,3 +12,4 @@
 ## INSTALLATION GUIDE 
 - Setup ubuntu on termux [UBUNTU](Doc/UBUNTU.md)
 - Chromium installation [CHROMIUM](Doc/CHROMIUM.md)
+- Setup Script [FINALIZATION](Doc/FINAL.md)
