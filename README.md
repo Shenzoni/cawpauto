@@ -6,3 +6,8 @@ You are solely responsible for how you use this project.
 
 # Autochat_Whataxx
 With this tool you can send messages between WhatsApp users for legal purposes (making WhatsApp accounts more active in chat).
+
+/*
+This software is licensed under AGPL-3.0.
+Commercial SaaS usage without releasing full source code is prohibited.
+*/
