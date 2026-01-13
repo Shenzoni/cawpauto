@@ -1,11 +1,4 @@
-## Chromium Installation
-**A. In termux home :** ~ $
-> pkg update && pkg upgrade && pkg
-> install proot-distro -y
-> proot-distro install ubuntu
-> proot-distro login ubuntu
-
-**B. In ubuntu home :** root@localhost:~
+**A. In ubuntu home :** root@localhost:~
 > 1. *apt update && apt upgrade -y
 > apt install -y curl wget gnupg ca-certificates software-properties-common
 apt install -y fonts-liberation \
