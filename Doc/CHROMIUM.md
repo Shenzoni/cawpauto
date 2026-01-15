@@ -10,6 +10,7 @@ libx11-xcb1 libxcomposite1 libxdamage1 libxrandr2 \
 xdg-utils libasound2t64
 ```
 STEP 2:
+``type "nano ./bashrc" then paste the bottom code to last line on bashrc``
 ```
 cat <<EOF /etc/apt/sources.list.d/debian-bookworm.list
 deb [signed-by=/usr/share/keyrings/debian-bookworm.gpg] http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware
