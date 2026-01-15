@@ -9,15 +9,18 @@ apt update && apt upgrade -y && apt install proot-distro -y && proot-distro inst
 This code for install update and clone my repository
 ```
 apt update -y && apt upgrade -y && apt install git -y
+```
+2. Clone my repository and open the folder
+```
 git clone https://github.com/Shenzoni/cawpauto
 cd cawpauto
 ```
-2. Install nodejs & npm package
+3. Install nodejs & npm package
 ```
 npm init -y
 npm install whatsapp-web.js qrcode-terminal axios puppeteer-core readline crypto fs
 ```
-3. Install curl & ca+lib software
+4. Install curl & ca+lib software
 ```
 apt install -y curl wget gnupg ca-certificates software-properties-common
 apt install -y fonts-liberation \
@@ -26,13 +29,13 @@ libcups2t64 libdrm2 libgbm1 libnspr4 libnss3 \
 libx11-xcb1 libxcomposite1 libxdamage1 libxrandr2 \
 xdg-utils libasound2t64
 ```
-4. Custom APT Source
+5. Custom APT Source
 ```
 cat <<EOF > /etc/apt/sources.list.d/debian-bookworm.list
 deb [signed-by=/usr/share/keyrings/debian-bookworm.gpg] http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware
 EOF
 ```
-5. Import GPG Debian key
+6. Import GPG Debian key
 ```
 curl -fsSL https://ftp-master.debian.org/keys/archive-key-12.asc \
 | gpg --dearmor -o /usr/share/keyrings/debian-bookworm.gpg
