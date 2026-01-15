@@ -21,21 +21,3 @@ export CHROME_PATH=/usr/bin/chromium
 
 Type in bash:
 ``source ~/.bashrc`` To reload your screen
-
-
-## TO RUN THE SCRIPT
-1. COPY & PASTE this code on bash
-```
-git clone https://github.com/Shenzoni/Autochat_Whataxx
-```
-
-2. COPY & PASTE this code on bash
-```
-cd Autochat_Whataxx
-node login.js cs1
-```
-
-Change cs1 to cs2 and so on after finishing creating the session
-example :
-Login for c1 done
-you need to run login.js cs2
