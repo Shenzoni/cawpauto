@@ -29,7 +29,6 @@ xdg-utils libasound2t64
 ```
 5. Install npm package
 ```
-npm init -y
 npm install whatsapp-web.js qrcode-terminal axios puppeteer-core readline crypto fs
 ```
 6. Custom APT Source
