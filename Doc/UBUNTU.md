@@ -3,17 +3,39 @@
 ```
 apt update && apt upgrade -y && apt install proot-distro -y && proot-distro install ubuntu && proot-distro login ubuntu
 ```
-**B. Update & Upgrade Ubuntu**
-This code for install ``update and clone my repository``
+
+## UBUNTU SETUP
+1. Update & Upgrade Ubuntu
+This code for install update and clone my repository
 ```
 apt update -y && apt upgrade -y && apt install git -y
 git clone https://github.com/Shenzoni/cawpauto
 cd cawpauto
 ```
-**C. Installation nodejs & npm package**
+2. Install nodejs & npm package
 ```
 npm init -y
 npm install whatsapp-web.js qrcode-terminal axios puppeteer-core readline crypto fs
+```
+3. Install curl & ca+lib software
+```
+apt install -y curl wget gnupg ca-certificates software-properties-common
+apt install -y fonts-liberation \
+libatk-bridge2.0-0t64 libatk1.0-0t64 libgtk-3-0t64 \
+libcups2t64 libdrm2 libgbm1 libnspr4 libnss3 \
+libx11-xcb1 libxcomposite1 libxdamage1 libxrandr2 \
+xdg-utils libasound2t64
+```
+4. Custom APT Source
+```
+cat <<EOF > /etc/apt/sources.list.d/debian-bookworm.list
+deb [signed-by=/usr/share/keyrings/debian-bookworm.gpg] http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware
+EOF
+```
+5. Import GPG Debian key
+```
+curl -fsSL https://ftp-master.debian.org/keys/archive-key-12.asc \
+| gpg --dearmor -o /usr/share/keyrings/debian-bookworm.gpg
 ```
 
 *SETUP UBUNTU DONE 👍*
