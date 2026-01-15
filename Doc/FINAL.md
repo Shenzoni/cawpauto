@@ -2,10 +2,8 @@
 
 STEP 1:
 ```
-curl -fsSL https://deb.nodesource.com/setup_20.x | bash
-```
-```
 apt install -y nodejs
+curl -fsSL https://deb.nodesource.com/setup_20.x | bash
 ```
 
 Type in bash:
