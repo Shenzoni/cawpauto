@@ -7,10 +7,6 @@
 - Device link login
 - Headless Chromium automation
 - License-key based execution
-## Requirements
-- Node.js >= 18
-- Chromium
-- Linux / Termux Ubuntu
 ## INSTALLATION GUIDE 
 - Setup ubuntu on termux [UBUNTU](Doc/UBUNTU.md)
 - Chromium installation [CHROMIUM](Doc/CHROMIUM.md)
