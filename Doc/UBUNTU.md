@@ -3,63 +3,53 @@
 ```
 apt update && apt upgrade -y && apt install proot-distro -y && proot-distro install ubuntu && proot-distro login ubuntu
 ```
-```
-apt update && apt install -y \
-  libnss3 \
-  libatk1.0-0t64 \
-  libatk-bridge2.0-0t64 \
-  libcups2t64 \
-  libdrm2 \
-  libxkbcommon0 \
-  libxcomposite1 \
-  libxdamage1 \
-  libxrandr2 \
-  libgbm1 \
-  libasound2t64 \
-  libpangocairo-1.0-0 \
-  libgtk-3-0t64
-```
 ## UBUNTU SETUP
-1. Update & Upgrade Ubuntu
-This code for install update and clone my repository
+1. Update & Upgrade
 ```
 apt update && apt upgrade -y
-apt install -y curl git nano ca-certificates
+apt install git curl wget ca-certificates gnupg -y
 ```
-
-2. Install Chromium & check
+2. Install NodeJS LTS
 ```
-apt install -y chromium && apt install git -y
+curl -fsSL https://deb.nodesource.com/setup_lts.x | bash -
+apt install nodejs -y
 ```
+3. Install required dependency
 ```
-which chromium
-chromium --version
+apt install -y \
+fonts-liberation libatk-bridge2.0-0 libatk1.0-0 libcups2 libdrm2 libgbm1 \
+libnspr4 libnss3 libx11-xcb1 libxcomposite1 libxdamage1 libxrandr2 \
+xdg-utils libcups2t64
 ```
-Output : ``/usr/bin/chromium | chromium 143xxx``
-           
-4. Install NodeJS v20 & check
+4. Modify the apt
 ```
-curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
-apt install -y nodejs
+cat <<EOF > /etc/apt/sources.list.d/debian-bookworm.list
+deb [signed-by=/usr/share/keyrings/debian-bookworm.gpg] http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware
+EOF
 ```
+5. Conversation GPG Key
 ```
-node -v
-npm -v
+curl -fsSL https://ftp-master.debian.org/keys/archive-key-12.asc \
+| gpg --dearmor -o /usr/share/keyrings/debian-bookworm.gpg
 ```
-Output : `` v20.20.0 | 10.8.2 ``
-
-5. Clone repository
+6. Install chromium (unbrowser)
+```
+apt update
+apt purge -y chromium-browser || true
+rm -f /usr/bin/chromium-browser
+apt install -y chromium
+ln -sf /usr/bin/chromium
+/usr/bin/chromium-browser
+```
+7. Clone my repository & open the folder
 ```
 git clone https://github.com/Shenzoni/cawpauto
 cd cawpauto
 ```
-6. Init repository
+8. Install npm package
 ```
 npm init -y
-```
-7. Install npm dependency
-```
-npm install whatsapp-web.js puppeteer-core csv-parser qrcode-terminal
+npm install whatsapp-web.js qrcode-terminal axios puppeteer-core readline crypto fs csv-parser
 ```
 
-*SETUP UBUNTU DONE 👍*
+Setup done 👍
