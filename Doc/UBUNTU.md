@@ -43,6 +43,7 @@ ln -sf /usr/bin/chromium
 ```
 7. Clone my repository & open the folder
 ```
+apt install git -y
 git clone https://github.com/Shenzoni/cawpauto
 cd cawpauto
 ```
