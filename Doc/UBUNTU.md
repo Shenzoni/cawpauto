@@ -44,7 +44,7 @@ npm init -y
 ```
 7. Install npm dependency
 ```
-npm install whatsapp-web.js puppeteer-core csv-parser
+npm install whatsapp-web.js puppeteer-core csv-parser qrcode-terminal
 ```
 
 *SETUP UBUNTU DONE 👍*
